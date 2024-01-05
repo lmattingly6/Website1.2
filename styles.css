@@ -1,0 +1,318 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    padding: 20px;
+    height:0;
+    background-color: black;
+    color:white;
+ 
+}
+
+
+
+header{
+    background-color: black;
+    padding: 10px 10px;
+    color: aliceblue;
+    font-size: large;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+/*PageHeader*/
+.page-head{
+    display: flex;
+    font-size: 30px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+/* HomeImage */
+.home-img{
+    width:100%;
+    height:auto;
+}
+/*PageFooter*/
+footer{
+    background-color: black;
+    padding: 20px 40px;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
+/*Navigation Styles*/
+ul{
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    margin-right:20px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: medium;
+}
+
+/* ... (other styles remain unchanged) */
+
+
+li:first-child{
+    margin-left:0;
+    justify-content: right;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+a:hover {
+    background-color: hotpink;
+    color:black;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+/*Main Styles*/
+
+
+.sectionA { 
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    height: fit-content;
+    width:auto;
+    border-radius: 4px;
+}
+.sectionA div{ 
+    width: auto;
+    margin:1px 0;
+    padding:2px;
+    text-align: center;
+    border-radius: 5px;
+}
+.sectionA img{
+    width: 50%;
+    border-radius: 6px;
+    height: auto;
+    max-height: 500px;
+    max-width: fit-content;
+}
+
+#about{
+    border: 1px solid black;
+    padding:20px;
+
+}
+#about p{
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    text-align: left;
+    line-height: 1.5;
+
+}
+.sectionB { 
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    height: auto;
+    width:auto;
+    border-radius: 4px;
+}
+.sectionB div{ 
+    width: auto;
+    margin:1px 0;
+    padding:2px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Add at the end of your existing CSS file */
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.menu-category {
+    text-align: left;
+}
+
+.menu-category h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.menu-item img {
+    width: 100%;
+    max-width: 200px; /* Adjust the maximum width of the images as needed */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 18px;
+    margin: 2px;
+
+}
+
+/* Add more specific styles as needed */
+
+
+
+
+/* Add at the end of your existing CSS file */
+
+footer {
+    background-color: black;
+    padding-top: 60px;
+    color: white;
+    border-radius: 5px;
+    text-align: center; /* Center-align the social media links */
+}
+
+.social-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 20px;
+    
+}
+
+.social-icons a img {
+    width: 60px; /* Adjust the width of the social media icons */
+    height: 60px; /* Adjust the height of the social media icons */
+
+    border: none; /* Remove the border from the images */
+}
+
+
+/* Add more specific styles as needed */
+
+
+ /* Define scrollbar styles */
+ ::-webkit-scrollbar {
+    width: 14px;
+    /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+    /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    /* color of the thumb */
+    border-radius: 6px;
+    /* roundness of the thumb */
+    border: 3px solid white;
+    /* border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+    /* color of the thumb on hover */
+
+.adoption{
+    border: 1px solid black;
+}
+
+
+
+@media(max-width:690px){
+li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+a:hover{
+    margin:auto;
+}
+.page-head {
+font-size: 24px;
+}
+.sectionA,
+.sectionB {
+    flex-direction: column;
+}
+.sectionA img {
+    width: 100%;
+    padding-left: 70px;
+}
+body{
+    padding:5px;
+}
+#about p{
+    font-size: medium;
+
+}
+
+
+
+}
+@media(min-width: 900px){
+    body{
+        padding:40px;
+    }
+    #about p{
+        font-size: large;
+    
+    }
+    
+}
+
+@media(min-width: 1200px) {
+    .page-head {
+        font-size: 36px;
+    }
+
+    .sectionA,
+    .sectionB {
+        flex-direction: row; /* Change back to row for larger screens */
+    }
+
+    .sectionA img {
+        width: 50%; /* Adjust image width for larger screens */
+    }
+
+    li{
+        display: inline-block;
+        margin-right:30px;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: large;
+    }
+    /*PageHeader*/
+.page-head{
+    display: flex;
+    font-size: 100px;
+    padding-top: 60px;
+    font-weight: bold;
+}
+
+body{
+    padding:0 15%;
+}
+
+#about p{
+    font-size: large;
+    padding:0 60px;
+    max-width: 80%;
+
+}
+}
+
+
