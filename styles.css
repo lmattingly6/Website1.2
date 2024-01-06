@@ -21,7 +21,7 @@ header{
 /*PageHeader*/
 .page-head{
     display: flex;
-    font-size: 45px;
+    font-size: 50px;
     padding-top: 30px;
     font-weight: bold;
 }
@@ -239,12 +239,11 @@ footer {
     }
 
     a:hover {
-        margin: auto;
         display: block; /* Ensure the hover effect is applied properly on small screens */
     }
 
     .page-head {
-        font-size: 24px;
+        font-size: 35px;
         padding-top: 20px; /* Adjust the spacing for the page header on small screens */
     }
 
@@ -266,6 +265,21 @@ footer {
         font-size: medium;
         padding: 0 10px; /* Adjust the padding for the 'about' section on small screens */
         max-width: 100%;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+    
+    .social-icons a {
+        margin: 0 7px;
+        
+    }
+    
+    .social-icons a img {
+        width: 45px; /* Adjust the width of the social media icons */
+        height: 45px; /* Adjust the height of the social media icons */
+    
+        border: none; /* Remove the border from the images */
     }
 }
 
