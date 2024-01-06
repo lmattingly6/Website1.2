@@ -276,8 +276,8 @@ footer {
     }
     
     .social-icons a img {
-        width: 45px; /* Adjust the width of the social media icons */
-        height: 45px; /* Adjust the height of the social media icons */
+        width: 35px; /* Adjust the width of the social media icons */
+        height: 35px; /* Adjust the height of the social media icons */
     
         border: none; /* Remove the border from the images */
     }
