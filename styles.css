@@ -107,6 +107,7 @@ a:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
     text-align: left;
     line-height: 1.5;
+    min-width:200px;
 
 }
 .sectionB { 
@@ -237,7 +238,7 @@ footer {
 
 
 
-@media(max-width: 690px) {
+@media(max-width: 790px) {
     li {
         display: block; /* Change to block for better stacking on small screens */
         margin: 10px 0; /* Add some spacing between stacked items */
@@ -264,13 +265,13 @@ footer {
     }
 
     body {
-        padding: 10px; /* Add some padding for better spacing on small screens */
+        padding: 8px; /* Add some padding for better spacing on small screens */
     }
 
     #about p {
         font-size: medium;
         padding: 0; /* Adjust the padding for the 'about' section on small screens */
-        max-width: 100%;
+
     }
     .social-icons {
         margin-top: 10px;
