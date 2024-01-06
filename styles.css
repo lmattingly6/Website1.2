@@ -269,7 +269,7 @@ footer {
 
     #about p {
         font-size: medium;
-        padding: 0 10px; /* Adjust the padding for the 'about' section on small screens */
+        padding: 0; /* Adjust the padding for the 'about' section on small screens */
         max-width: 100%;
     }
     .social-icons {
