@@ -21,7 +21,7 @@ header{
 /*PageHeader*/
 .page-head{
     display: flex;
-    font-size: 30px;
+    font-size: 45px;
     padding-top: 30px;
     font-weight: bold;
 }
@@ -69,7 +69,6 @@ a:hover {
     color:black;
     font-weight: bold;
     border-radius: 4px;
-    padding: 2px;
 }
 
 /*Main Styles*/
@@ -186,7 +185,7 @@ footer {
 .social-icons a {
     display: inline-block;
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 16px;
     
 }
 
@@ -232,37 +231,49 @@ footer {
 
 
 
-@media(max-width:690px){
-li{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-a:hover{
-    margin:auto;
-}
-.page-head {
-font-size: 24px;
-}
-.sectionA,
-.sectionB {
-    flex-direction: column;
-}
-.sectionA img {
-    width: 100%;
-    padding-left: 70px;
-}
-body{
-    padding:5px;
-}
-#about p{
-    font-size: medium;
+@media(max-width: 690px) {
+    li {
+        display: block; /* Change to block for better stacking on small screens */
+        margin:0; /* Add some spacing between stacked items */
+        text-align: center;
+    }
 
+    a:hover {
+        display: block; /* Ensure the hover effect is applied properly on small screens */
+    }
+
+    .page-head {
+        font-size: 30px;
+        padding-top: 20px; /* Adjust the spacing for the page header on small screens */
+    }
+
+    .sectionA,
+    .sectionB {
+        flex-direction: column;
+    }
+
+    .sectionA img {
+        width: 100%;
+        padding: 0; /* Remove left padding on the image for better alignment */
+    }
+
+    body {
+        padding: 10px; /* Add some padding for better spacing on small screens */
+    }
+
+    #about p {
+        font-size: medium;
+        padding: 0 10px; /* Adjust the padding for the 'about' section on small screens */
+        max-width: 100%;
+    }
+    .social-icons a img {
+        width: 45px; /* Adjust the width of the social media icons */
+        height: 45px; 
+}
 }
 
 
 
-}
 @media(min-width: 900px){
     body{
         padding:40px;
