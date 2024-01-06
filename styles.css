@@ -231,32 +231,42 @@ footer {
 
 
 
-@media(max-width:690px){
-li{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-a:hover{
-    margin:auto;
-}
-.page-head {
-font-size: 24px;
-}
-.sectionA,
-.sectionB {
-    flex-direction: column;
-}
-.sectionA img {
-    width: 100%;
-    padding-left: 70px;
-}
-body{
-    padding:5px;
-}
-#about p{
-    font-size: medium;
+@media(max-width: 690px) {
+    li {
+        display: block; /* Change to block for better stacking on small screens */
+        margin: 10px 0; /* Add some spacing between stacked items */
+        text-align: center;
+    }
 
+    a:hover {
+        margin: auto;
+        display: block; /* Ensure the hover effect is applied properly on small screens */
+    }
+
+    .page-head {
+        font-size: 24px;
+        padding-top: 20px; /* Adjust the spacing for the page header on small screens */
+    }
+
+    .sectionA,
+    .sectionB {
+        flex-direction: column;
+    }
+
+    .sectionA img {
+        width: 100%;
+        padding: 0; /* Remove left padding on the image for better alignment */
+    }
+
+    body {
+        padding: 10px; /* Add some padding for better spacing on small screens */
+    }
+
+    #about p {
+        font-size: medium;
+        padding: 0 10px; /* Adjust the padding for the 'about' section on small screens */
+        max-width: 100%;
+    }
 }
 
 
